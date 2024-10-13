@@ -1,0 +1,117 @@
+ /* Font from google font family */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Shared style */
+*{
+    font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  overflow-x: hidden;
+}
+.icon-style{
+    padding:20px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+ 
+/* Main Style */
+
+body{
+    background-image: url(./images/Background_image.svg);
+    background-color: #121826;
+    height: 100vh;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feedback-section{
+    text-align: center;
+}
+
+.section-title{
+    color: #E5E7EB;
+    font-size: 2.5rem;
+    padding: 0px 500px;
+}
+
+.section-sub-title{
+    color: #9DA3AE;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+.components{
+    display: flex;
+    gap: 80px;
+    margin-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.components-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #212936;
+    padding: 20px 20px;
+    border: 1px solid #212936;
+    border-radius: 20px;
+}
+.components-container img{
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.component-title{
+    color: #E5E7EB;
+    font-size: 1.25rem;
+    margin: 10px 0px;
+}
+.component-desc{
+    color: #9DA3AE;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0px;
+    padding-right: 50px;
+}
+
+/* Icon style */
+
+.icon-1{
+    background-color: #FCEED8;
+}
+.icon-2{
+    background-color: #DEE9FC;
+}
+.icon-3{
+    background-color: #FBE5E6;
+}
+
+/* Responsive media queries */
+
+/* for mobile device */
+
+@media screen and (max-width: 576px){
+    .components{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-title{
+        padding: 50px 15px 10px 15px;
+    }
+}
+/* Tablet or Medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px){
+
+     .components{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section-title{
+        padding: 50px 25px 10px 25px;
+    }
+}
